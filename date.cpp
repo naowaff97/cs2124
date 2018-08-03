@@ -9,7 +9,7 @@ ostream& operator << (ostream& os, const date& d){          // os means output s
 istream& operator >> (istream& is, date& d){                // is means input stream
     char first, second;
     while(1){
-        cout<<"Please enter a date in format (YYYY,MM,DD): ";
+        cout<<"Please enter a date in format YYYY,MM,DD: ";
         is>>d.year>>first>>d.month>>second>>d.day;
         try{
             if(!d.isvalid()) throw 404;
