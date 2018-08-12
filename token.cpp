@@ -387,6 +387,8 @@ int main()
     Token_stream ts;
     try
     {
+        set_value("pi", 3.1415926535);
+    set_value("e", 2.7182818284);
         calculate(ts);
         return 0;
     }
